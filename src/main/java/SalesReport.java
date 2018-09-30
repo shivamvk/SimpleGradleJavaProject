@@ -6,7 +6,7 @@ public class SalesReport {
     private String name;
 
     public static void main(String[] args) {
-        SalesReport salesReport = new SalesReport(10, "Jiit Noida", "Shivam Bhasin");
+        SalesReport salesReport = new SalesReport(10, "Jiit Noida, Sector 62", "Shivam Bhasin");
         JsonDisplay.showJSON(salesReport);
     }
 
