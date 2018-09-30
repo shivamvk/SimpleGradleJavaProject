@@ -1,5 +1,3 @@
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 public class SalesReport {
 
@@ -9,9 +7,7 @@ public class SalesReport {
 
     public static void main(String[] args) {
         SalesReport salesReport = new SalesReport(10, "Jiit Noida", "Shivam Bhasin");
-        Gson gson = new GsonBuilder().create();
-        String json = gson.toJson(salesReport);
-        System.out.println(json);
+        JsonDisplay.showJSON(salesReport);
     }
 
     public SalesReport(int id, String address, String name) {
